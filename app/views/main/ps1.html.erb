@@ -1,0 +1,31 @@
+<h1>PS1 Basics</h1>
+<hr>
+<ul>
+  <h2><%= link_to "Divide by Zero",  main_divideByZero_path %> </h2>
+  <ul>
+    <li> To output the stack trace in Production Mode, we need to change the 'config.consider_all_requests_local' to 'true'.</li>
+    <li> The 'config.consider_all_requests_local' can be found in config/environments/production.rb file.</li>
+    <li> The error log can be logged into the 'production.log' file. </li>
+    <li> If we are using Exception Handling, then we can use the ZeroDivisionError exception handler. </li>
+  </ul>
+  <hr>
+  <h2><%= link_to "Google News", main_googleNews_path%></h2>
+    <ul>
+      <li> 'Nokogiri' gem was used to parse the HTML web pages for scraping the Google News website.</li>
+      <li> Article title, thumbnail and link are retrieved using the 'inspect element' option and adding those class names to our code. </li>
+      <li> 'open-uri' library was used to open the Google News url.</li>
+    </ul>
+</ul>
+
+<h3> References </h3>
+<ul>
+  <li> <a href="https://www.digitalocean.com/community/tutorials/how-to-deploy-a-rails-app-with-passenger-and-apache-on-ubuntu-14-04">Passenger module installation</a></li>
+  <li> <a href="https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/ownserver/apache/oss/rubygems_norvm/install_passenger.html"> Passenger installation </a></li>
+  <li> <a href="http://www.nokogiri.org/"> Nokogiri Documentation </a></li>
+  <li> <a href="http://adrianmcli.com/2015/05/23/rails-scraping-tutorial/"> Nokogiri Tutorial </a></li>
+  <li> <a href="https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04"> Apache Server Installation </a></li>
+</ul>
+<hr>
+</body>
+</html>
+

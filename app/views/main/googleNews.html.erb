@@ -1,0 +1,23 @@
+<h1>Google News</h1>
+<br>
+<h1> Headlines </h1>
+<% for j in 0..10%>
+  <a href="https://news.google.com/<%= @head_link[j].xpath("@href") %> "><%= sanitize @head_title[j].css('span').xpath('text()').to_s %></a>
+  <br>
+  <img src=" <%= @head_img[j].xpath("@src") %> ">
+  <br>
+  <p>-------------------------------------------------------------</p>
+<% end %>
+
+
+<h1> World </h1>
+<% for i in 0..10%>
+  <a href="https://news.google.com/<%= @link[i].xpath("@href") %> "><%= sanitize @title[i].css('span').xpath('text()').to_s %></a>
+  <br>
+  <img src=" <%= @image[i].xpath("@src") %> ">
+  <br>
+  <p>-------------------------------------------------------------</p>
+<% end %>
+
+
+
